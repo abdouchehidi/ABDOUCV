@@ -1,0 +1,365 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.btn {
+    width: 100px;
+    height: 35px;
+    border: 2px solid white;
+    color: white;
+    background: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.main-site {
+    width: 95%;
+    height: 100vh;
+    background-color: black;
+    background-image: url(../images/background1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcome-sect {
+    color: white;
+    padding: 5rem;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+
+.welcome-sect h1 {
+    font-size: 70px;
+    margin-bottom: 1rem;
+}
+
+.side-bar {
+    width: 5%;
+    height: 115.5vh;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+}
+
+.social-links,
+.usefull-links {
+    width: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.social-links {
+    top: 50%;
+    left: 50%;
+}
+
+.usefull-links {
+    bottom: 0;
+    left: 50%;
+}
+
+.bubbles {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+
+.bubbles img {
+    width: 50px;
+    animation: bubble 7s linear infinite;
+    border-radius: 50%;
+}
+
+@keyframes bubble {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    75% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.bubbles img:nth-child(1) {
+    animation-delay: 2s;
+    width: 5px;
+    height: 5px;
+}
+
+.bubbles img:nth-child(2) {
+    animation-delay: 1s;
+    width: 50px;
+    height: 50px;
+}
+
+.bubbles img:nth-child(3) {
+    animation-delay: 0s;
+    width: 20px;
+    height: 20px;
+}
+
+.bubbles img:nth-child(4) {
+    animation-delay: 3s;
+    width: 30px;
+    height: 30px;
+}
+
+.bubbles img:nth-child(5) {
+    animation-delay: 2s;
+    width: 10px;
+    height: 10px;
+}
+
+.bubbles img:nth-child(6) {
+    animation-delay: 1s;
+    width: 40px;
+    height: 40px;
+}
+
+.bubbles img:nth-child(7) {
+    animation-delay: 0s;
+    width: 15px;
+    height: 15px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    background: rgb(0, 0, 0);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 350px;
+    height: 500px;
+    box-shadow: 0 0 
+    40px 20px rgba(0, 0, 0, 0.26);
+    perspective: 1000px;
+    }
+    
+    .inner-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    }
+    
+    .card-front,
+    .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.8)), url(image.jpg);
+    padding: 55px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+    }
+    
+    .card-back {
+    transform: rotateY(180deg);
+    }
+    
+    .card h2 {
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    
+    .input-box {
+    width: 100%;
+    height: 32px;
+    background: transparent;
+    border: 1px solid rgb(229, 255, 0);
+    margin: 6px 0;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    color: #ffffff;
+    }
+    
+    ::placeholder {
+    color: #ffffff;
+    font-size: 12px;
+    }
+    
+    .btn-1 {
+    width: 100%;
+    height: 32px;
+    background: transparent;
+    margin: 35px 0 10px;
+    font-size: 12px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    color: #ffffff;
+    border: 2px solid rgb(229, 255, 0);
+    border-radius: 20px;
+    cursor: pointer;
+    }
+    
+    .Submit-btn {
+    position: relative;
+    }
+    
+    .Submit-btn::after {
+    content: '→';
+    color: #333;
+    line-height: 32px;
+    font-size: 17px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+    }
+    
+    .btn-position {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    }
+    
+    span {
+    font-size: 13px;
+    margin-left: 10px;
+    }
+    
+    .card a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 8px;
+    }
+    
+    .form-control i {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    visibility: hidden;
+    }
+    
+    .form-control {
+    position: relative;
+    }
+    
+    .form-control small {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    }
+    
+    .form-control.success input {
+    border-color: #2ecc71;
+    }
+    
+    .form-control.error .input-box {
+    border-color: #e74c3d;
+    }
+    
+    .form-control.success i.fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+    }
+    
+    .form-control.error i.fa-exclamation-circle {
+    color: #e74c3d;
+    visibility: visible;
+    }
+    
+    .form-control.error small {
+    color: #e74c3d;
+    visibility: visible;
+    }
+    
+    .success-message {
+    display: none
+    ;
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: #e6f4ea;
+padding: 20px;
+border: 2px solid #66bb6a;
+border-radius: 8px;
+animation: fadeOut 3s ease-in;
+}
+
+.success-message.show {
+display: flex;
+opacity: 0;
+animation: fadeIn 0.5s ease-in, fadeOut 3s 0.5s ease-in;
+}
+
+.success-icon {
+font-size: 30px;
+margin-right: 10px;
+color: #66bb6a;
+}
+
+.success-text {
+font-size: 18px;
+color: #333;
+}
+
+@keyframes fadeIn {
+0% {
+opacity: 0;
+}
+100% {
+opacity: 1;
+}
+}
+
+@keyframes fadeOut {
+0% {
+opacity: 1;
+}
+70% {
+opacity: 1;
+}
+100% {
+opacity: 0;
+height: 0;
+padding: 0;
+margin: 0;
+border: none;
+}
+}
